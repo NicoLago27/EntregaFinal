@@ -1,7 +1,6 @@
 // _grid.scss
 @import 'variables';
 
-// _grid.scss
 .grid-container {
     display: grid;
     row-gap: 1rem;
@@ -39,6 +38,5 @@
 .img3,
 .carrusel,
 .mapa {
-    @include responsive-img;
     margin: 0 auto;
 }

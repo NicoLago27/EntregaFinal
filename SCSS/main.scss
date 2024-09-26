@@ -1,5 +1,4 @@
 // main.scss
-// main.scss
 @import 'variables';
 @import 'mixins';
 @import 'navbar';
@@ -7,6 +6,7 @@
 @import 'card';
 @import 'footer';
 @import 'media';
+@import 'buttons';
 
 .container-fluid {
   font-family: $font-family-main;

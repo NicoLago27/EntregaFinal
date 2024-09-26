@@ -1,54 +1,66 @@
 .navbar-brand {
   color: rgb(29, 23, 120) !important;
   text-transform: uppercase;
-  font-family: "Bebas Neue", sans-serif;
   font-weight: bold;
   font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.container-fluid {
-  font-family: Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-main {
+.grid-container {
   display: grid;
-  font-family: Helvetica, Arial, sans-serif;
+  row-gap: 1rem;
+  column-gap: 1rem;
 }
 
-.navbar-nav .nav-link {
-  text-align: right;
-  margin-right: 5px;
-  color: rgb(29, 23, 120);
-  font-size: 20px;
+.grid-item {
+  padding: 5px;
 }
 
-.servicios {
+.titulo {
   color: rgb(29, 23, 120);
   text-transform: uppercase;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 }
 
-img .responsive {
-  width: auto;
-  max-height: 100%;
+.subtitulo,
+.subtitulo1,
+.subtitulo2,
+.subtitulo3,
+.subtitulo4 {
+  color: rgb(29, 23, 120);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.galeria,
+.TipoDeVehiculo {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.img1,
+.img2,
+.img3,
+.carrusel,
+.mapa {
+  margin: 0 auto;
 }
 
 .card-horizontal {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   margin-bottom: 20px;
 }
-
 .card-horizontal .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .card-horizontal .card-img {
   width: 40%;
   object-fit: cover;
@@ -63,67 +75,48 @@ footer {
   row-gap: 1rem;
   column-gap: 1rem;
 }
-.grid-container .grid-item {
+
+.grid-item {
   padding: 5px;
-}
-.grid-container .titulo {
-  color: rgb(29, 23, 120);
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0 auto;
-  text-align: center;
-}
-.grid-container .subtitulo, .grid-container .subtitulo2, .grid-container .subtitulo4, .grid-container .subtitulo1 {
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-top: 15px;
-}
-.grid-container .galeria, .grid-container .TipoDeVehiculo {
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 1.5rem;
-  text-align: center;
-}
-.grid-container .img1, .grid-container .img2, .grid-container .img3, .grid-container .carrusel, .grid-container .mapa {
-  max-width: 100%;
-  margin: 0 auto;
 }
 
-.grid-container {
-  display: grid;
-  row-gap: 1rem;
-  column-gap: 1rem;
-}
-.grid-container .grid-item {
-  padding: 5px;
-}
-.grid-container .titulo {
+.titulo {
   color: rgb(29, 23, 120);
   text-transform: uppercase;
   font-weight: bold;
-  margin: 0 auto;
   text-align: center;
 }
-.grid-container .subtitulo, .grid-container .subtitulo2, .grid-container .subtitulo4, .grid-container .subtitulo1 {
+
+.subtitulo,
+.subtitulo1,
+.subtitulo2,
+.subtitulo3,
+.subtitulo4 {
+  color: rgb(29, 23, 120);
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 15px;
 }
-.grid-container .galeria, .grid-container .TipoDeVehiculo {
+
+.galeria,
+.TipoDeVehiculo {
   font-size: 20px;
   font-weight: bold;
-  margin-top: 1.5rem;
   text-align: center;
 }
-.grid-container .img1, .grid-container .img2, .grid-container .img3, .grid-container .carrusel, .grid-container .mapa {
-  max-width: 100%;
+
+.img1,
+.img2,
+.img3,
+.carrusel,
+.mapa {
   margin: 0 auto;
 }
 
 /*Mobile*/
 @media only screen and (max-width: 767px) {
   .navbar-brand {
-    font-size: 30px;
+    font-size: font-size-medium;
     margin-top: 10px;
   }
   main {
@@ -143,7 +136,8 @@ footer {
     font-size: 18px;
     text-align: center;
   }
-  .texto, .texto3 {
+  .texto,
+  .texto3 {
     font-size: 12px;
     grid-column: 1/6;
     grid-row: 3/5;
@@ -204,7 +198,7 @@ footer {
     font-size: 15px;
     text-align: center;
   }
-  .btn {
+  .btn, .btn-danger, .btn-secondary, .btn-primary {
     font-size: 10px;
     float: right;
   }
@@ -361,7 +355,7 @@ footer {
     grid-row: 11/15;
     margin: auto;
   }
-  .btn {
+  .btn, .btn-danger, .btn-secondary, .btn-primary {
     float: right;
     font-size: 15px;
   }
@@ -509,7 +503,7 @@ footer {
     grid-row: 9/12;
     height: 19rem;
   }
-  .btn {
+  .btn, .btn-danger, .btn-secondary, .btn-primary {
     float: right;
     font-size: 15px;
   }
@@ -570,6 +564,37 @@ footer {
     grid-column: 7/12;
     grid-row: 3/11;
   }
+}
+.btn, .btn-danger, .btn-secondary, .btn-primary {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btn-secondary {
+  background-color: gray;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.container-fluid {
+  font-family: "Helvetica, Arial, sans-serif";
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+main {
+  display: grid;
+  font-family: "Helvetica, Arial, sans-serif";
 }
 
 /*# sourceMappingURL=styles.css.map */
