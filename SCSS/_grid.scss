@@ -1,0 +1,44 @@
+// _grid.scss
+@import 'variables';
+
+// _grid.scss
+.grid-container {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.grid-item {
+    padding: 5px;
+}
+
+.titulo {
+    @include text-styling($primary-color, $uppercase, $font-bold);
+    text-align: center;
+}
+
+.subtitulo,
+.subtitulo1,
+.subtitulo2,
+.subtitulo3,
+.subtitulo4 {
+    @include text-styling($primary-color, $uppercase, $font-bold);
+    margin-top: 15px;
+}
+
+.galeria,
+.TipoDeVehiculo {
+    font-size: $font-size-md;
+    font-weight: $font-bold;
+    text-align: center;
+}
+
+
+.img1,
+.img2,
+.img3,
+.carrusel,
+.mapa {
+    @include responsive-img;
+    margin: 0 auto;
+}

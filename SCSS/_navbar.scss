@@ -1,0 +1,6 @@
+// _navbar.scss
+.navbar-brand {
+    @include text-styling($primary-color, $uppercase, $font-bold, $font-size-lg);
+    font-family: $font-family-brand;
+  }
+  

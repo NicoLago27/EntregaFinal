@@ -1,0 +1,21 @@
+// _mixins.scss
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @mixin text-styling($color, $transform: none, $weight: normal, $size: null) {
+    color: $color;
+    text-transform: $transform;
+    font-weight: $weight;
+    @if $size {
+      font-size: $size;
+    }
+  }
+  

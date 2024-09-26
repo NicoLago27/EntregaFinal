@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transporte El Rayo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-light py-3">
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html">Transporte El Rayo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/vehic.html">Vehículos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="grid-container">
+        <h2 class="grid-item titulo">Contacto</h2>
+        <h3 class="grid-item subtitulo1">Atención al cliente</h3>
+        <ul class="list-unstyled grid-item contactos">
+            <li><i class="fas fa-phone-alt"></i> <span>Telefono: +123 456 7890</span></li>
+            <li><i class="fab fa-whatsapp"></i> <span>WhatsApp: +123 456 7890</span></li>
+            <li><i class="fas fa-envelope"></i> <span>Email: info@transporteelrayo.com</span></li>
+        </ul>
+        <h3 class="grid-item subtitulo3">Redes sociales</h3>
+        <ul class="grid-item redes list-unstyled">
+            <li><a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: black;"></i></a>
+                Instagram: @Transporte_ElRayo</li>
+            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"
+                        style="color: black"></i></a> Facebook: /TransporteElRayo</li>
+            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in "
+                        style="color: black"></i></a> LinkeIn: Transporte El Rayo</li>
+        </ul>
+        <h3 class="grid-item subtitulo4">Ubicación</h3>
+        <iframe class=" grid-item mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453281.09818881244!2d-60.816239271686655!3d-31.72195276326373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b50a095d930fb5%3A0xc8357f9e11b91ffa!2sRN19%2C%20Santa%20Fe!5e1!3m2!1ses-419!2sar!4v1722296315043!5m2!1ses-419!2sar"
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h3 class="grid-item mensaje">Dejanos un mensaje</h3>
+        <form action="#" method="post" class="grid-item formulario">
+            <div class="row mb-3">
+                <div class="mb-3">
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre y Apellido*</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje*</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+    </main>
+    <footer class="bg-light text-center py-3">
+        <p class="mb-1">Transporte El Rayo</p>
+        <p class="mb-0"><a href="#" class="link-dark">Todos los derechos reservados</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

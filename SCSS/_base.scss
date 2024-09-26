@@ -1,0 +1,60 @@
+// _base.scss
+@import 'variables';
+
+// base.scss
+.navbar-brand {
+    color: $primary-color !important;
+    @include text-uppercase;
+    font-family: $font-family-header;
+    font-size: $font-size-large;
+  }
+  
+  .container-fluid {
+    font-family: $font-family-body;
+    @include text-uppercase;
+    font-size: $font-size-small;
+  }
+  
+  main {
+    display: grid;
+    font-family: $font-family-body;
+  }
+  
+  .navbar-nav .nav-link {
+    text-align: right;
+    margin-right: 5px;
+    color: $primary-color;
+    font-size: $font-size-medium;
+  }
+  
+  .servicios {
+    color: $primary-color;
+    @include text-uppercase;
+    text-align: left;
+  }
+   
+
+img .responsive {
+    width: auto;
+    max-height: 100%;
+}
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  .card-horizontal .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card-horizontal .card-img {
+    width: 40%;
+    object-fit: cover; 
+  }
+
+footer {
+    margin-bottom: 0;
+}
+
+  

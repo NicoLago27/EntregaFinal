@@ -1,0 +1,22 @@
+// main.scss
+// main.scss
+@import 'variables';
+@import 'mixins';
+@import 'navbar';
+@import 'grid';
+@import 'card';
+@import 'footer';
+@import 'media';
+
+.container-fluid {
+  font-family: $font-family-main;
+  text-transform: $uppercase;
+  font-weight: $font-bold;
+  font-size: $font-size-sm;
+}
+
+main {
+  display: grid;
+  font-family: $font-family-main;
+}
+

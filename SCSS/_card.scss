@@ -1,0 +1,17 @@
+// _card.scss
+.card-horizontal {
+    @include flex-center;
+    flex-direction: row;
+    margin-bottom: 20px;
+  
+    .card-body {
+      @include flex-column;
+      justify-content: space-between;
+    }
+  
+    .card-img {
+      width: 40%;
+      object-fit: cover;
+    }
+  }
+  
