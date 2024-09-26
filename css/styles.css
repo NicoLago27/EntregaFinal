@@ -1,6 +1,59 @@
 .navbar-brand {
   color: rgb(29, 23, 120) !important;
   text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+}
+
+.container-fluid {
+  font-family: "Helvetica, Arial, sans-serif";
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-link {
+  text-align: right;
+  margin-right: 5px;
+  color: rgb(29, 23, 120);
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.servicios {
+  color: rgb(29, 23, 120);
+  text-transform: uppercase;
+  text-align: left;
+}
+
+img .responsive {
+  width: auto;
+  max-height: 100%;
+}
+
+.card-horizontal {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.card-horizontal .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-horizontal .card-img {
+  width: 40%;
+  object-fit: cover;
+}
+
+footer {
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  color: rgb(29, 23, 120);
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 35px;
   font-family: "Bebas Neue", sans-serif;
@@ -583,18 +636,6 @@ footer {
 
 .btn-danger {
   background-color: red;
-}
-
-.container-fluid {
-  font-family: "Helvetica, Arial, sans-serif";
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-main {
-  display: grid;
-  font-family: "Helvetica, Arial, sans-serif";
 }
 
 /*# sourceMappingURL=styles.css.map */

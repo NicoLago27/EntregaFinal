@@ -1,5 +1,6 @@
 // main.scss
 @import 'variables';
+@import 'base';
 @import 'mixins';
 @import 'navbar';
 @import 'grid';
@@ -8,15 +9,4 @@
 @import 'media';
 @import 'buttons';
 
-.container-fluid {
-  font-family: $font-family-main;
-  text-transform: $uppercase;
-  font-weight: $font-bold;
-  font-size: $font-size-sm;
-}
-
-main {
-  display: grid;
-  font-family: $font-family-main;
-}
 

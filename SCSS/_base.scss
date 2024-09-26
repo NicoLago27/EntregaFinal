@@ -4,32 +4,28 @@
 // base.scss
 .navbar-brand {
     color: $primary-color !important;
-    @include text-uppercase;
-    font-family: $font-family-header;
-    font-size: $font-size-large;
+    text-transform: $uppercase;
+    font-family: $font-family-brand;
+    font-size: $font-size-lg;
   }
   
   .container-fluid {
-    font-family: $font-family-body;
-    @include text-uppercase;
-    font-size: $font-size-small;
+    font-family: $font-family-main;
+    text-transform: $uppercase;
+    font-size: $font-size-sm;
   }
-  
-  main {
-    display: grid;
-    font-family: $font-family-body;
-  }
-  
+    
   .navbar-nav .nav-link {
     text-align: right;
     margin-right: 5px;
     color: $primary-color;
-    font-size: $font-size-medium;
+    font-size:$font-size-md;
+    font-family: $font-family-brand;
   }
   
   .servicios {
     color: $primary-color;
-    @include text-uppercase;
+    text-transform: $uppercase;
     text-align: left;
   }
    
